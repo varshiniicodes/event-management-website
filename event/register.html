@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for an Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="registration-container">
+            <h1>Register for an Event</h1>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="event">Select Event</label>
+                    <select id="event" name="event" required>
+                        <option value="Marketing Summit">Marketing Summit</option>
+                        <option value="Healthcare Innovation">Healthcare Innovation</option>
+                        <option value="Startups and Entrepreneurship Expo">Startups and Entrepreneurship Expo</option>
+                        <option value="Global Fintech Conference">Global Fintech Conference</option>
+                        <option value="Green Energy Summit">Green Energy Summit</option>
+                        <option value="International AI Symposium">International AI Symposium</option>
+                        <option value="Blockchain World Congress">Blockchain World Congress</option>
+                        <option value="Women in Tech Conference">Women in Tech Conference</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eventhub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add event listener to the registration form
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            
+            // Redirect to the registration success page
+            window.location.href = 'registration-success.html';
+        });
+    </script>
+</body>
+</html>

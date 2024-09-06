@@ -1,0 +1,606 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90caf9;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Body background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+}
+
+/* Home Page Styles */
+.feature, .about-content, .events-container, .contact-content {
+    background: #1e1e1e; /* Dark background for sections */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: #b0bec5;
+    font-size: 1.2em;
+}
+
+/* Button Styles */
+.cta-button {
+    background-color: #6200ea; /* Vibrant purple for buttons */
+    color: #ffffff;
+    border: none;
+    padding: 0.8em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e; /* Customize as needed */
+    color: #ffffff;            /* Customize text color */
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+  }
+/* Contact Page Styles */
+.contact-container {
+    background: #1e1e1e; /* Dark background */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    max-width: 800px;
+    margin: 2em auto;
+    color: #e0e0e0;
+}
+
+.contact-container h1 {
+    margin-bottom: 1em;
+    color: #ffffff; /* Light text color */
+}
+
+.contact-container p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    color: #b0bec5; /* Slightly lighter text color for labels */
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #333; /* Dark border for inputs */
+    border-radius: 4px;
+    background: #121212; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #90caf9; /* Light blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    background-color: #6200ea; /* Vibrant purple for button */
+    color: #ffffff;
+    border: none;
+    padding: 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+/*new*/
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #080808;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Site Title */
+.site-title h1 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #3700b3;
+    font-size: 48px;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav ul li a {
+    color: #ffffff;/*home about login*/
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3700b3;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4em 0;
+    background-color: #1e1e1e;/*welocme to eventhub dabba*/
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 3em 1em;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    padding: 1em;
+    margin: 1em;
+    background-color:#6200ea;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.feature-item:hover{
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 3em 1em;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-size: 1.2em;
+    margin: 1em auto;
+    color: #555;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+/* Partners Section */
+.partners {
+    padding: 3em 1em;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.partners ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partners ul li {
+    display: inline-block;
+    margin: 0.5em;
+    font-size: 1.1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+}
+/* Login Page Styles */
+.login-container {
+    background: #1e1e1e; /* Dark background */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    max-width: 800px;
+    margin: 2em auto;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 1em;
+    color: #ffffff; /* Light text color */
+}
+
+.login-container p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+}
+
+form label {
+    color: #b0bec5; /* Slightly lighter text color for labels */
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #333; /* Dark border for inputs */
+    border-radius: 4px;
+    background: #121212; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #90caf9; /* Light blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    background-color: #6200ea; /* Vibrant purple for button */
+    color: #ffffff;
+    border: none;
+    padding: 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e1e1e;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90caf9;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Event Details Section */
+.event-details {
+    background: linear-gradient(135deg, #2e2e2e, #3a3a3a);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.event-details h1 {
+    color: #90caf9;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.event-details p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #b0bec5;
+}
+
+#register-button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 0.8em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#register-button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+/* Agenda Section */
+.agenda {
+    background: #1e1e1e;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+.agenda h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.agenda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.agenda li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #b0bec5;
+}
+
+/* Registration Form */
+#registration-form {
+    background: #2e2e2e;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2em;
+}
+
+#registration-form h2 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+#registration-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#registration-form input,
+#registration-form button {
+    padding: 0.8em;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+#registration-form button {
+    background-color: #6200ea;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#registration-form button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    background: #1e1e1e;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-events h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.card {
+    background: linear-gradient(135deg, #2e2e2e, #3a3a3a);
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #90caf9;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, #3700b3, #6200ea);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}

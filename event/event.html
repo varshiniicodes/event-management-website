@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="event-details">
+            <h1>Annual Tech Conference 2024</h1>
+            <p>Date: August 25, 2024</p>
+            <p>Location: New York City</p>
+            <p>Description: Join us for an exciting event filled with inspiring talks, networking opportunities, and much more.</p>
+            <button id="register-button">Register</button>
+        </section>
+
+        <section class="agenda">
+            <h2>Event Agenda</h2>
+            <ul>
+                <li><strong>09:00 AM:</strong> Registration & Welcome Coffee</li>
+                <li><strong>10:00 AM:</strong> Keynote Address by Jane Doe</li>
+                <li><strong>11:00 AM:</strong> Panel Discussion: The Future of Tech</li>
+                <li><strong>01:00 PM:</strong> Lunch & Networking</li>
+                <li><strong>02:30 PM:</strong> Workshop: AI in Everyday Life</li>
+                <li><strong>04:00 PM:</strong> Closing Remarks & Awards Ceremony</li>
+            </ul>
+        </section>
+        
+        <section id="registration-form" style="display: none;">
+            <h2>Register for the Event</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event-cards">
+                <div class="card">
+                    <a href="event-marketing-summit.html" class="card">
+                        <h3>Marketing Summit 2024</h3>
+                        <p>Date: September 10, 2024</p>
+                        <p>Location: Los Angeles, CA</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="event-healthcare-innovation.html" class="card">
+                        <h3>Healthcare Innovation Forum</h3>
+                        <p>Date: October 15, 2024</p>
+                        <p>Location: Chicago, IL</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="event-startups-entrepreneurship-expo.html" class="card">
+                    <h3> Startups & Entrepreneurship Expo</h3>
+                    <p>Date: November 20, 2024</p>
+                    <p>Location: San Francisco, CA</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="event-global-fintech-conference.html" class="card">
+                    <h3>Global Fintech Conference</h3>
+                    <p>Date: December 5, 2024</p>
+                    <p>Location: London, UK</p>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="event-green-energy-summit.html" class="card">
+                    <h3>Green Energy Summit</h3>
+                    <p>Date: January 15, 2025</p>
+                    <p>Location: Berlin, Germany</p>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="event-international-ai-symposium.html" class="card">
+                    <h3>International AI Symposium</h3>
+                    <p>Date: February 20, 2025</p>
+                    <p>Location: Tokyo, Japan</p>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="event-blockchain-world-congress.html" class="card">
+                    <h3>Blockchain World Congress</h3>
+                    <p>Date: March 12, 2025</p>
+                    <p>Location: Dubai, UAE</p>
+                </a>
+                </div>
+                <div class="card">
+                    <a href="event-women-in-tech-conference.html" class="card">
+                    <h3>Women in Tech Conference</h3>
+                    <p>Date: April 8, 2025</p>
+                    <p>Location: Sydney, Australia</p>
+                </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Eventhub. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+    // Redirect when the main event register button is clicked
+document.getElementById('register-button').addEventListener('click', function() {
+    window.location.href = 'registration-success.html';
+});
+
+// Add event listener for other buttons if needed in the future
+document.querySelectorAll('.cta-button').forEach(button => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'registration-success.html';
+    });
+});
+</script>
+</body>
+</html>
